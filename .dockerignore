@@ -1,0 +1,33 @@
+# .dockerignore
+
+# Git specific files
+.git
+.gitignore
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE and OS-specific files
+.idea/
+.vscode/
+.DS_Store
+
+# Local log files
+*.log
+
+# MLflow tracking data (already inside the project, but good to explicitly ignore if not needed in a specific build)
+# In our case we NEED it, so we comment it out or remove it.
+# mlruns/
+
+# Any local notebooks or test outputs
+notebooks/
+*.ipynb
+
+# The environment file itself should not be in the image
+.env
