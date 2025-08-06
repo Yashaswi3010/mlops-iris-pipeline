@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/ydaram/OneDrive - OpenText/BITS WILP AIML/3rd Semester/MLOps/Assignment
+  1/mlops-iris-pipeline/mlruns/830885950204077984/133bb9337b9649dcae1bcbebe38078c2/artifacts
+end_time: 1754494745733
+entry_point_name: ''
+experiment_id: '830885950204077984'
+lifecycle_stage: active
+run_id: 133bb9337b9649dcae1bcbebe38078c2
+run_name: RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754494743350
+status: 3
+tags: []
+user_id: ydaram

@@ -21,4 +21,4 @@ EXPOSE 8000
 
 # Define the command to run the application
 # The MLflow tracking URI is set to the local mlruns directory inside the container
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--env-file", ".env"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -1,0 +1,11 @@
+artifact_location: file:C:/Users/ydaram/OneDrive - OpenText/BITS WILP AIML/3rd Semester/MLOps/Assignment
+  1/mlops-iris-pipeline/mlruns/830885950204077984/models/m-635ac7e946714d8eb97b92e6d475ab3d/artifacts
+creation_timestamp: 1754494743479
+experiment_id: '830885950204077984'
+last_updated_timestamp: 1754494745730
+model_id: m-635ac7e946714d8eb97b92e6d475ab3d
+model_type: null
+name: RandomForest
+source_run_id: 133bb9337b9649dcae1bcbebe38078c2
+status: 2
+status_message: null
