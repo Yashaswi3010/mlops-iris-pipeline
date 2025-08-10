@@ -43,6 +43,7 @@ Instrumentator().instrument(app).expose(app)
 MODEL_NAME = "iris-classifier"
 MODEL_STAGE = "Production"
 try:
+    model_uri = f"models:/{MODEL_NAME}/{MODEL_STAGE}"
     model = mlflow.pyfunc.load_model(model_uri=f"models:/{MODEL_NAME}/{MODEL_STAGE}")
     logger.info(f"Successfully loaded model '{MODEL_NAME}' version '{MODEL_STAGE}'")
 except Exception as e:
