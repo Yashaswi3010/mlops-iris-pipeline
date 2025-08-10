@@ -5,6 +5,7 @@ import pandas as pd
 import mlflow
 import logging
 from collections import Counter
+from prometheus_fastapi_instrumentator import Instrumentator
 
 # Configure logging
 logging.basicConfig(
@@ -25,13 +26,15 @@ PREDICTION_COUNTER = Counter()
 
 # Define the input data schema using Pydantic
 class IrisFeatures(BaseModel):
-    sepal_length: float
-    sepal_width: float
-    petal_length: float
-    petal_width: float
+    sepal_length: float = Field(..., gt=0, description="Sepal length in cm, must be positive.")
+    sepal_width: float = Field(..., gt=0, description="Sepal width in cm, must be positive.")
+    petal_length: float = Field(..., gt=0, description="Petal length in cm, must be positive.")
+    petal_width: float = Field(..., gt=0, description="Petal width in cm, must be positive.")
 
 # Initialize FastAPI app
 app = FastAPI(title="Iris Classifier API", version="1.0.0")
+
+Instrumentator().instrument(app).expose(app)
 
 # Load the production model from MLflow Model Registry
 # Ensure the MLflow UI is running or you have a tracking server configured
@@ -77,12 +80,3 @@ def predict(features: IrisFeatures):
         logger.error(f"Prediction error: {e}")
         REQUEST_COUNTER.update({"failed": 1})
         return {"error": str(e)}
-
-@app.get("/metrics", tags=["Monitoring"])
-def get_metrics():
-    """Endpoint to view basic monitoring metrics."""
-    return {
-        "total_requests": REQUEST_COUNTER["total"],
-        "failed_requests": REQUEST_COUNTER["failed"],
-        "predictions_per_class": dict(PREDICTION_COUNTER)
-    }

@@ -5,3 +5,4 @@ mlflow
 fastapi
 uvicorn[standard]
 python-dotenv
+prometheus-fastapi-instrumentator

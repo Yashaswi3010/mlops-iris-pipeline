@@ -1,0 +1,31 @@
+# .github/workflows/retrain.yml
+name: Scheduled Model Re-training
+
+on:
+  schedule:
+    # Runs every Sunday at midnight
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  retrain-and-promote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Re-train model
+        run: python scripts/train.py
+        # This will create a new model version in MLflow
+
+      - name: Promote model if better
+        run: python scripts/promote_model.py
+        # This compares the latest model (now in Staging) to Production

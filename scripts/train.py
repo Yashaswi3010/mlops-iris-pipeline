@@ -25,7 +25,9 @@ def train_model(model, X_train, y_train, model_name, params={}):
         mlflow.log_metric("f1_score", f1)
 
         # Log the model
-        mlflow.sklearn.log_model(clf, model_name)
+        mlflow.sklearn.log_model(sk_model=clf,
+                        artifact_path=model_name,
+                        registered_model_name=model_name)
 
         print(f"{model_name} - Accuracy: {accuracy:.4f}, F1-Score: {f1:.4f}")
         return clf
