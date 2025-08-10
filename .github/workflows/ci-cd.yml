@@ -40,6 +40,13 @@ jobs:
           echo "Waiting for 20 seconds for the containers to start..."
           sleep 20
 
+      - name: Check Container Contents
+        run: |
+          echo "--- Listing contents of /app directory inside the container ---"
+          docker compose exec app ls -la /app
+          echo "--- Checking if mlruns exists and has content ---"
+          docker compose exec app ls -la /app/mlruns || echo "mlruns directory not found!"
+          
       - name: Run API Sanity Tests
         run: pytest tests/
 
