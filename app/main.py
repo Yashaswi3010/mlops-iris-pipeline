@@ -5,6 +5,8 @@ import pandas as pd
 import mlflow
 import logging
 from collections import Counter
+
+from pydantic.fields import Field
 from prometheus_fastapi_instrumentator import Instrumentator
 
 # Configure logging
