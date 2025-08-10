@@ -26,7 +26,10 @@ jobs:
 
       - name: Lint with Flake8
         run: |
+          pip install flake8
+          echo "--- Running critical lint checks ---"
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          echo "--- Running general style checks ---"
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
       - name: Run services using Docker Compose

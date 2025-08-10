@@ -7,4 +7,5 @@ uvicorn[standard]
 python-dotenv
 prometheus-fastapi-instrumentator
 pytest
-requests 
+requests
+flake8
