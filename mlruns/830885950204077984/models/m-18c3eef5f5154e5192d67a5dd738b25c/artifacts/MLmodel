@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/ydaram/OneDrive - OpenText/BITS WILP AIML/3rd Semester/MLOps/Assignment
+  1/mlops-iris-pipeline/mlruns/830885950204077984/models/m-18c3eef5f5154e5192d67a5dd738b25c/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+mlflow_version: 3.1.4
+model_id: m-18c3eef5f5154e5192d67a5dd738b25c
+model_size_bytes: 1000
+model_uuid: m-18c3eef5f5154e5192d67a5dd738b25c
+prompts: null
+run_id: fa64ca47b2fc4b9e95d7eeb8fe272402
+utc_time_created: '2025-08-11 07:26:30.781393'

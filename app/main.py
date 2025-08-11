@@ -41,11 +41,11 @@ Instrumentator().instrument(app).expose(app)
 # Load the production model from MLflow Model Registry
 # Ensure the MLflow UI is running or you have a tracking server configured
 MODEL_NAME = "iris-classifier"
-MODEL_STAGE = "Production"
+MODEL_ALIAS = "production"
 try:
-    model_uri = f"models:/{MODEL_NAME}/{MODEL_STAGE}"
-    model = mlflow.pyfunc.load_model(model_uri=f"models:/{MODEL_NAME}/{MODEL_STAGE}")
-    logger.info(f"Successfully loaded model '{MODEL_NAME}' version '{MODEL_STAGE}'")
+    model_uri = f"models:/{MODEL_NAME}@{MODEL_ALIAS}"
+    model = mlflow.pyfunc.load_model(model_uri=f"models:/{MODEL_NAME}@{MODEL_ALIAS}")
+    logger.info(f"Successfully loaded model '{MODEL_NAME}' version '{MODEL_ALIAS}'")
 except Exception as e:
     model = None
     logger.error(f"Error loading model: {e}")
@@ -65,11 +65,11 @@ def predict(features: IrisFeatures):
 
     try:
         # Convert input data to DataFrame
-        input_df = pd.DataFrame([features.dict()])
+        input_df = pd.DataFrame([features.model_dump()])
         # Rename columns to match model's expected feature names
         input_df.columns = ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
 
-        logger.info(f"Received prediction request: {features.dict()}")
+        logger.info(f"Received prediction request: {features.model_dump()}")
 
         # Make prediction
         prediction = model.predict(input_df)

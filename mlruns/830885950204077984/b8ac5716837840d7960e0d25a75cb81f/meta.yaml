@@ -1,9 +1,10 @@
 artifact_uri: file:C:/Users/ydaram/OneDrive - OpenText/BITS WILP AIML/3rd Semester/MLOps/Assignment
   1/mlops-iris-pipeline/mlruns/830885950204077984/b8ac5716837840d7960e0d25a75cb81f/artifacts
+deleted_time: 1754897212942
 end_time: 1754494743346
 entry_point_name: ''
 experiment_id: '830885950204077984'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: b8ac5716837840d7960e0d25a75cb81f
 run_name: LogisticRegression
 source_name: ''

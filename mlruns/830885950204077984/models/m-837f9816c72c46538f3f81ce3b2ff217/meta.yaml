@@ -3,6 +3,7 @@ artifact_location: file:C:/Users/ydaram/OneDrive - OpenText/BITS WILP AIML/3rd S
 creation_timestamp: 1754375236909
 experiment_id: '830885950204077984'
 last_updated_timestamp: 1754375239125
+lifecycle_stage: deleted
 model_id: m-837f9816c72c46538f3f81ce3b2ff217
 model_type: null
 name: RandomForest

@@ -1,0 +1,7 @@
+2025-08-11 12:11:09,211 - __main__ - ERROR - Error loading model from '/app/model': No such file or directory: '\app\model'
+2025-08-11 12:42:55,895 - __main__ - ERROR - Error loading model: No versions of model with name 'iris-classifier' and stage 'Production' found
+2025-08-11 13:03:03,864 - __main__ - ERROR - Error loading model: Invalid Model Version stage: prod. Value must be one of None, Staging, Production, Archived.
+2025-08-11 13:04:31,967 - __main__ - ERROR - Error loading model: No versions of model with name 'iris-classifier' and stage 'production' found
+2025-08-11 13:04:47,983 - __main__ - ERROR - Error loading model: Invalid Model Version stage: prod. Value must be one of None, Staging, Production, Archived.
+2025-08-11 13:05:57,663 - __main__ - ERROR - Error loading model: No versions of model with name 'iris-classifier' and stage 'production' found
+2025-08-11 13:09:18,233 - __main__ - INFO - Successfully loaded model 'iris-classifier' version 'production'

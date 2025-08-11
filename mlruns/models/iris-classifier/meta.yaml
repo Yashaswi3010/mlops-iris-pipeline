@@ -1,7 +1,8 @@
-aliases: {}
-creation_timestamp: 1754375402749
+aliases:
+  production: '1'
+creation_timestamp: 1754897307469
 deployment_job_id: null
 deployment_job_state: null
 description: ''
-last_updated_timestamp: 1754375698595
+last_updated_timestamp: 1754897614071
 name: iris-classifier

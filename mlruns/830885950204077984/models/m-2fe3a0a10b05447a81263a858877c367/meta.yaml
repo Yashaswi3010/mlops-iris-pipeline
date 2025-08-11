@@ -3,6 +3,7 @@ artifact_location: file:C:/Users/ydaram/OneDrive - OpenText/BITS WILP AIML/3rd S
 creation_timestamp: 1754494739758
 experiment_id: '830885950204077984'
 last_updated_timestamp: 1754494743342
+lifecycle_stage: deleted
 model_id: m-2fe3a0a10b05447a81263a858877c367
 model_type: null
 name: LogisticRegression

@@ -1,20 +1,20 @@
 aliases: []
-creation_timestamp: 1754375403037
+creation_timestamp: 1754897307478
 current_stage: None
 deployment_job_state: null
 description: ''
-last_updated_timestamp: 1754375403037
+last_updated_timestamp: 1754897307478
 metrics: null
-model_id: m-837f9816c72c46538f3f81ce3b2ff217
+model_id: m-18c3eef5f5154e5192d67a5dd738b25c
 name: iris-classifier
 params: null
 run_id: ''
 run_link: ''
 source: file:C:/Users/ydaram/OneDrive - OpenText/BITS WILP AIML/3rd Semester/MLOps/Assignment
-  1/mlops-iris-pipeline/mlruns/830885950204077984/models/m-837f9816c72c46538f3f81ce3b2ff217/artifacts
+  1/mlops-iris-pipeline/mlruns/830885950204077984/models/m-18c3eef5f5154e5192d67a5dd738b25c/artifacts
 status: READY
 status_message: null
 storage_location: file:C:/Users/ydaram/OneDrive - OpenText/BITS WILP AIML/3rd Semester/MLOps/Assignment
-  1/mlops-iris-pipeline/mlruns/830885950204077984/models/m-837f9816c72c46538f3f81ce3b2ff217/artifacts
+  1/mlops-iris-pipeline/mlruns/830885950204077984/models/m-18c3eef5f5154e5192d67a5dd738b25c/artifacts
 user_id: null
 version: 1

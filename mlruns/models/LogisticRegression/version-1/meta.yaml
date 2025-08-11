@@ -1,0 +1,19 @@
+aliases: []
+creation_timestamp: 1754897194162
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1754897194162
+metrics: null
+model_id: m-18c3eef5f5154e5192d67a5dd738b25c
+name: LogisticRegression
+params: null
+run_id: fa64ca47b2fc4b9e95d7eeb8fe272402
+run_link: null
+source: models:/m-18c3eef5f5154e5192d67a5dd738b25c
+status: READY
+status_message: null
+storage_location: file:C:/Users/ydaram/OneDrive - OpenText/BITS WILP AIML/3rd Semester/MLOps/Assignment
+  1/mlops-iris-pipeline/mlruns/830885950204077984/models/m-18c3eef5f5154e5192d67a5dd738b25c/artifacts
+user_id: null
+version: 1
