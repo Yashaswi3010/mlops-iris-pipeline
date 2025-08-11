@@ -1,0 +1,11 @@
+artifact_location: file:C:/Users/ydaram/OneDrive - OpenText/BITS WILP AIML/3rd Semester/MLOps/Assignment
+  1/mlops-iris-pipeline/mlruns/559469742929684954/models/m-0c1e3cbc36a54279ad50af4e36fc0f7f/artifacts
+creation_timestamp: 1754898726580
+experiment_id: '559469742929684954'
+last_updated_timestamp: 1754898729781
+model_id: m-0c1e3cbc36a54279ad50af4e36fc0f7f
+model_type: null
+name: LogisticRegression
+source_run_id: 2abdae09e18c4f67a0067ee0a012eab2
+status: 2
+status_message: null
