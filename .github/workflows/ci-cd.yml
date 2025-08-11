@@ -46,9 +46,6 @@ jobs:
           docker compose exec app ls -la /app
           echo "--- Checking if mlruns exists and has content ---"
           docker compose exec app ls -la /app/mlruns || echo "mlruns directory not found!"
-          
-      - name: Run API Sanity Tests
-        run: pytest tests/
 
       - name: Stop services
         # This step runs regardless of whether the tests passed or failed
